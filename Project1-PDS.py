@@ -161,7 +161,7 @@ def option3():#função que realiza a terceira operação
     #recebe um sinal discreto, realiza a transformada de fourier, e plota a correspondente de fourier
     signalInput4 = str(input("Digite o sinal digital para obter a FFT(ex.: 1 2 0 1): "))
     entrance4 = signalInput4.split(" ")
-    a4 = createFunction(signalInput4,entrance4)
+    a4 = createFunction(entrance4)
     a4 = fft(a4)
     print(a4)
     plotFunction(a4)

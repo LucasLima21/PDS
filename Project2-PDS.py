@@ -16,7 +16,7 @@ def createFunction(entrance): # função que ja recebe a lista de polinimios e o
         coefSignal.append(eval(entrance[i]))
     return coefSignal
 
-def plotFunctionZero(resultSignal, symbol): #função que plota o os zeros e os polos conforme com o símbolo que recebe na entrada
+def plotFunction(resultSignal, symbol): #função que plota o os zeros e os polos conforme com o símbolo que recebe na entrada
     # sendo "o" para os zeros e "x" para os polos
     plt.axhline(0, color = 'black')
     plt.ylabel('Imaginário')
@@ -24,6 +24,7 @@ def plotFunctionZero(resultSignal, symbol): #função que plota o os zeros e os 
     plt.grid()
     plt.plot(resultSignal,symbol)
     plt.show()
+
 
 
 def findRoots(a):#função que retorna as raizes reais/imaginárias dos polinomios
@@ -49,8 +50,8 @@ def option1():#função que roda a opção 1 a qual recebe o numerador e denomin
     den = rounding(aux2)
     print(num)
     print(den)
-    plotFunctionZero(num,"o")
-    plotFunctionPolo(den,"x")
+    plotFunction(num,"o")
+    plotFunction(den,"x")
     print("\n")
 
 
@@ -65,5 +66,5 @@ def startProgram():#função que inicia o programa, fica em looping mostrando o 
 
 
 
-#Inicio!!! chamada da subrotina que inicializa o programa 
+#Inicio!!! chamada da subrotina que inicializa o programa
 startProgram()
