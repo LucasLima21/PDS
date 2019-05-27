@@ -2,6 +2,10 @@
 Equipe 7: Beatriz Moura, Lucas Lima, Luiz Gadelha
 """
 
+"""
+Teste de entrada: numerado = 1 0
+denominador = 1 0.25 -0.375
+"""
 
 import math #biblioteca utilizada para algumas funções de constantes da math
 
@@ -16,15 +20,29 @@ def createFunction(entrance): # função que ja recebe a lista de polinimios e o
         coefSignal.append(eval(entrance[i]))
     return coefSignal
 
-def plotFunction(resultSignal, symbol): #função que plota o os zeros e os polos conforme com o símbolo que recebe na entrada
-    # sendo "o" para os zeros e "x" para os polos
+def plotUnitCircle(): # função que retorna o plot somente da circunferencia de raio R da RDC.
+    t = np.linspace(0,2*np.pi,100)
+    x = 1*np.cos(t)
+    y = 1*np.sin(t)
+    return plot(x,y)
+
+def plotFunction(zero, polo): #função recebe lista de zeros e lista de polos
+
     plt.axhline(0, color = 'black')
     plt.ylabel('Imaginário')
     plt.xlabel('Real')
     plt.grid()
-    plt.plot(resultSignal,symbol)
-    plt.show()
 
+    plotUnitCircle() # plota a circunferencia unitária  R = 1
+
+    #Plota os zeros com parte real e imaginária
+    for i in range(len(zero)):
+        plt.plot(zero[i].real,zero[i].imag,'o')
+
+    #plota os polos com parte real e imaginária
+    for j in range(len(polo)):
+        plt.plot(polo[j].real,polo[j].imag,'x')
+    plt.show()
 
 
 def findRoots(a):#função que retorna as raizes reais/imaginárias dos polinomios
@@ -50,8 +68,9 @@ def option1():#função que roda a opção 1 a qual recebe o numerador e denomin
     den = rounding(aux2)
     print(num)
     print(den)
-    plotFunction(num,"o")
-    plotFunction(den,"x")
+    plotFunction(num,den)
+    # plotCircle()
+    # plotFunction(den,"x")
     print("\n")
 
 
