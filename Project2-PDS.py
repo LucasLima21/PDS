@@ -32,7 +32,7 @@ def plotFunction(zero, polo): #função recebe lista de zeros e lista de polos
     plt.ylabel('Imaginário')
     plt.xlabel('Real')
     plt.grid()
-
+    plt.axis('equal')
     plotUnitCircle() # plota a circunferencia unitária  R = 1
 
     #Plota os zeros com parte real e imaginária
