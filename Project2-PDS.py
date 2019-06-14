@@ -29,6 +29,7 @@ def plotUnitCircle(): # função que retorna o plot somente da circunferencia de
 def plotFunction(zero, polo): #função recebe lista de zeros e lista de polos
 
     plt.axhline(0, color = 'black')
+    plt.axvline(0, color = 'black')
     plt.ylabel('Imaginário')
     plt.xlabel('Real')
     plt.grid()
