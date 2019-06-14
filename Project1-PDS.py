@@ -1,6 +1,7 @@
+
+    
 """
 Equipe 7: Lucas Correia, Lucas Lima, Luiz Gadelha
-
 """
 
 #bibliotecas utilizadas para construção deste programa
@@ -48,18 +49,21 @@ def sampleResult(entrance, sample, coefSignal, exp, n):
 def plotSampleFunction(sample, sampleResult):
     #função que mostra o sinal discreto que fora obtido com cada valor de amostragem
     plt.axhline(0, color = 'black')
+    plt.axvline(0, color = 'black')
     plt.ylabel('Y')
     plt.xlabel('X')
     plt.grid()
     plt.plot(sample, sampleResult,'o')
+    plt.stem(sample, sampleResult)
     plt.show()
 
 def plotFunction(resultSignal):#função que plota a transformada e a convolução, passando somente a lista de sinal resultante
     plt.axhline(0, color = 'black')
+    plt.axvline(0, color = 'black')
     plt.ylabel('Y')
     plt.xlabel('X')
     plt.grid()
-    plt.plot(resultSignal,'o')
+    plt.plot(resultSignal,'-')
     plt.show()
 
 
