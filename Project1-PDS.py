@@ -1,7 +1,11 @@
 
     
 """
+UEA - Universidade do Estado do Amazonas
+EST - Escola Superior de Tecnologia
+Processamendo Digital de Sinais
 Equipe 7: Lucas Correia, Lucas Lima, Luiz Gadelha
+E-mail: ldsllm.eng@uea.edu.br
 """
 
 #bibliotecas utilizadas para construção deste programa
