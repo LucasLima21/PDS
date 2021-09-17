@@ -1,4 +1,11 @@
-#Equipe: Beatriz Moura, Lucas Lima, Luiz Gadelha
+"""
+UEA - Universidade do Estado do Amazonas
+EST - Escola Superior de Tecnologia
+Processamendo Digital de Sinais
+Equipe: Beatriz Moura, Lucas Lima, Luiz Gadelha
+E-mail: ldsllm.eng@uea.edu.br
+"""
+
 
 import math #biblioteca utilizada para algumas funções de constantes da math
 #bibliotecas abaixo utilizadas para plotagem dos polos e zeros da resultante da transformada Z
