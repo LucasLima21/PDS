@@ -1,5 +1,9 @@
 """
 Equipe 7: Beatriz Moura, Lucas Lima, Luiz Gadelha
+UEA - Universidade do Estado do Amazonas
+EST - Escola Superior de Tecnologia
+Processamendo Digital de Sinais
+E-mail: ldsllm.eng@uea.edu.br
 """
 
 """
